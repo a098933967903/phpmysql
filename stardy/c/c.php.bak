@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset ="UTF-8">
+		</head>
+			<body>
+				<?php require '../header.php';?>
+				
+				<?php 
+					$b = $_REQUEST['b'];
+					$c = $_REQUEST['c'];
+					$a = $_REQUEST['a'];
+					$answer = 1/2*$b*$c*$a;
+					echo '面積=',$answer;
+				?>
+				
+				<?php require '../footer.php';?>
+				
+			</body>
+	</html>

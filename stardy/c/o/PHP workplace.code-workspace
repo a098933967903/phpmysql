@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "htdocs",
+			"path": "..\\..\\.."
+		},
+		{
+			"name": "stardy",
+			"path": "..\\.."
+		},
+		{
+			"name": "c",
+			"path": ".."
+		},
+		{
+			"name": "o",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+	</head>
+		<body>
+			
+			<?php require '../header.php';?>
+			
+			<form action ="output.php" method="post">
+				價格<input type="text" name ="price">元X
+				數量<input type="text" name ="count">個
+				<input type="submit" value ="運算">
+			</form>
+			
+			<?php require '../header.php';?>
+			
+		</body>
+		
+</html>

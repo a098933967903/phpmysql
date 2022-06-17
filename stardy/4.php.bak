@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<body background='sc.jpg'>
+		<body style='background-repeat:no repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;'>
+		<meta charset ='UTF-8'>
+	</head>
+		<body>
+			<//?php require '../header.php';?>
+
+			<?php 
+			
+			$m = '大人';
+			$n1=$_REQUEST['name'];
+			$n=mb_convert_kana($n1,'a');
+			if(isset($_REQUEST["man"])){
+				if($_REQUEST['count']>=1994){
+					$m='帥哥';
+				}
+					else{
+						$m='大叔';
+					}
+					
+				}
+				else {
+					$m=$m;
+				}
+			if(isset($_REQUEST["women"])){
+				if($_REQUEST['count']>=1994){
+					$m='妹子';
+				}
+					else{
+						$m='女士';
+					}
+				
+			}
+				else {
+				 	$m=$m;
+				}
+			if(isset($_REQUEST["women"])&&isset($_REQUEST["man"])){
+				$m="陰陽人";
+			}
+				else{
+					$m=$m;
+				}
+				
+			
+			if(isset($n)){
+				echo '<br>';
+				echo '<font size="6" face="DFKai-sb">歡迎</font>','&nbsp;',"<b><font size='5' face=''>",$n,$m,"</font></b>",'&nbsp','<br>';
+				echo '<p>&nbsp;&nbsp;<font size="6" face="DFkai-sb">使用阿晟程式</font><br></p>';
+				#echo '<br>';
+			}
+			?>
+			
+			<//?php require '../footer.php';?>
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href="c/ca.php">商品總額計算<br></a>
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href="c/a.php">求三角形面積<br></a>
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href="c/fb.php">餐飲菜單<br></a>
+			<?php 
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href='c/q.php'>阿晟flag問題大考驗<br></a>
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href='c/ci.php'>各縣市人數查詢<br></a>
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href='c/gu.php'>軍火庫(需密碼認證<br></a>
+			
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href='c/ch.php'>大樂透(電腦選號)<br></a>
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+			?>
+			<a href='c/as.php'>訪客評價系統<br></a>
+			<?php
+				for($i=0;$i<4;$i++){
+					echo '&nbsp;';
+				}
+				?>
+			<a href='c/pr.php'>圖片列印<br></a>
+			<br><b><font>time-recorded</font></b>
+			<?php
+				date_default_timezone_set('Asia/Taipei');
+				echo date('Y/m/d H:i:s');
+				
+			?>
+			
+			<//img src="item1.png">
+			
+		</body>
+
+</html>
+
+
+
+						

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset='utf-8'>
+			<body background=''>
+			<body style='background-repeat:no repeat;
+				background-size:100% 100%;
+				background-attachment:fixed;'>
+		</head>
+			<body>
+			<?php
+				$file='A.txt';
+				$A=$_REQUEST['m'];
+					if(file_exists($file)){
+						$file1=json_decode(file_get_contents($file));
+					}
+					$file1[]=$A;
+					file_put_contents($file,json_encode($file1));
+					foreach($file1 as $f){
+						echo '<p>',$f,'</p><hr>';
+					}
+					
+						
+							if(is_uploaded_file($_FILES['file']['tem_name'])){
+								if(!file_exists('upload')){
+									mkdir('upload');
+								}
+						$fileB='upload/'.basename($_FILES['file']['name']);
+							if(move_uploaded_file($_FILES['file']['tem_name'],$fileB)){
+								echo $fileB,'上傳成功';
+							}
+								else{
+									echo '上傳失敗';
+								}
+						}
+					
+				?>	
+			</body>
+	</html>
